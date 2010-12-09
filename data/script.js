@@ -12,7 +12,11 @@ $(document).ready(function() {
 
     links.each(function(i, link) {
         if ($.inArray(link.rel, relKeywords) != -1) {
-            console.log("Relation " + link.rel + " link to " + link.href);
+            var content = {
+                'href': link.href,
+                'rel': link.rel,
+                'title': link.title};
+            postMessage(content);
         }
     });
 });
