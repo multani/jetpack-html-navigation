@@ -1,0 +1,14 @@
+[ui]
+    email = jon@multani.info
+
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	url = webfaction:repositories/jetpack-html-navigation.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "master"]
+	remote = .
+	merge = refs/heads/origin
