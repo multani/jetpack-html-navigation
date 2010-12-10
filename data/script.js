@@ -23,7 +23,7 @@ $(document).ready(function() {
         }
     });
 
-    if (nav_bar.children.length > 0) {
+    if (nav_bar.children('a').length > 0) {
         // Style the navigation block
         nav_bar.css({
             'position'    : 'absolute',
