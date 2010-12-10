@@ -1,5 +1,9 @@
-onMessage = function onMessage(message) {
+onMessage = function onMessage(links) {
     var content = $('#content');
-    var a = '<a href="' + message['href'] + '" title="' + message['title'] + '">' + message['rel'] + '</a>';
-    content.append(a);
+
+    $.each(links, function(i, link) {
+        var a = '<a href="' + link['href'] + '" title="' + link['title'] + '">' + link['rel'] + '</a>';
+
+        content.append(a);
+    });
 }
