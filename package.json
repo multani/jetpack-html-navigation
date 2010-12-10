@@ -1,5 +1,8 @@
 {
-    "id": "jid0-EhjT1CU8pCBA01ekZ78Sju21Bts", 
-    "description": "HTML navigation", 
-    "author": "Jonathan Ballet <jon@multani.info>"
+	"author": "Jonathan Ballet <jon@multani.info>",
+	"description": "Display a toolbar at the top of a page, for website proposing HTML navigation feature.",
+	"fullName": "HTML navigation toolbar",
+	"license": "BSD",
+	"id": "jid0-EhjT1CU8pCBA01ekZ78Sju21Bts",
+	"version": "0.1"
 }
