@@ -26,7 +26,17 @@ $(document).ready(function() {
     if (nav_bar.children.length > 0) {
         nav_bar.css('position', 'absolute')
                .css('top', 0)
-               .css('background-color', 'red');
+               .css('padding', '3px 7px')
+               .css('background', 'lightgrey')
+               .css('font-family', 'sans-serif')
+               .css('border', '1px solid grey')
+               ;
+
+        nav_bar.children().css('border-left', '1px solid');
+        nav_bar.children().css('border-color', nav_bar.children().css('color'));
+        nav_bar.children().css('padding', '0 3px');
+        nav_bar.children(':first-child').css('border-left', 'none');
+
         $('html').append(nav_bar);
     }
 });
