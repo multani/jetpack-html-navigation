@@ -9,14 +9,18 @@ var relKeywords = [    'start',
 
 $(document).ready(function() {
     var links = $('head link');
+    var contents = [];
 
     links.each(function(i, link) {
         if ($.inArray(link.rel, relKeywords) != -1) {
-            var content = {
+            contents.push({
                 'href': link.href,
                 'rel': link.rel,
-                'title': link.title};
-            postMessage(content);
+                'title': link.title});
         }
     });
+
+    if (contents.length > 0) {
+        postMessage(contents);
+    }
 });
