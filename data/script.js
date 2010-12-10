@@ -24,19 +24,28 @@ $(document).ready(function() {
     });
 
     if (nav_bar.children.length > 0) {
-        nav_bar.css('position', 'absolute')
-               .css('top', 0)
-               .css('padding', '3px 7px')
-               .css('background', 'lightgrey')
-               .css('font-family', 'sans-serif')
-               .css('border', '1px solid grey')
-               ;
+        // Style the navigation block
+        nav_bar.css({
+            'position'    : 'absolute',
+            'top'         : '0',
+            'padding'     : '3px 7px',
+            'background'  : 'lightgrey',
+            'font-family' : 'sans-serif',
+            'border'      : '1px solid grey',
+        });
 
-        nav_bar.children().css('border-left', '1px solid');
-        nav_bar.children().css('border-color', nav_bar.children().css('color'));
-        nav_bar.children().css('padding', '0 3px');
-        nav_bar.children(':first-child').css('border-left', 'none');
+        // Style the links inside the navigation block
+        var font_color = nav_bar.children().css('color');
+        nav_bar.children().css({
+            'border-left'  : '1px solid',
+            'border-color' : font_color,
+            'padding'      : '0 3px'
+        });
+        nav_bar.children(':first-child').css({
+            'border-left': 'none'
+        });
 
+        // Let's display the stuff
         $('html').append(nav_bar);
     }
 });
