@@ -26,7 +26,7 @@ $(document).ready(function() {
     if (nav_bar.children('a').length > 0) {
         // Style the navigation block
         nav_bar.css({
-            'position'    : 'absolute',
+            'position'    : 'fixed',
             'top'         : '0',
             'padding'     : '3px 7px',
             'background'  : 'lightgrey',
