@@ -7,3 +7,5 @@ This is useful if you are browsing documentation, such as those produced by the
 [Sphinx documentation project](http://sphinx.pocoo.org/ Sphinx website).
 
 This extension currently only works with Firefox 4.0b or greater.
+
+You can download the releases [on the project website](http://multani.info/projects/jetpack-html-navigation/releases).
