@@ -62,8 +62,7 @@ If you want to contact the author, just send an email at
 
 .. _link types section: http://www.w3.org/TR/1999/REC-html401-19991224/types.html#type-links
 .. _Sphinx: http://sphinx.pocoo.org/
-.. _Install HTML navigation toolbar: http://multani.info/projects/jetpack-html-navigation/releases/jetpack-html-navigation-0.2.xpi
+.. _Install HTML navigation toolbar: http://multani.info/projects/jetpack-html-navigation/releases/jetpack-html-navigation-0.2.0.xpi
 .. _Addon SDK: https://addons.mozilla.org/en-US/developers/
 .. _Git repository: http://multani.info/projects/git/?p=jetpack-html-navigation.git;a=summary
 .. _jon+jetpack-html-navigation@multani.info: mailto:jon+jetpack-html-navigation@multani.info
-
