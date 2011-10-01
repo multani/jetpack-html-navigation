@@ -10,7 +10,7 @@ var relKeywords = [
 
 
 $(document).ready(function() {
-    var nav_bar = $('<div></div>');
+    var nav_bar = $('<div id="jetpack-html-navigation"></div>');
     var links_map = {};
 
     $('head link').each(function(i, link) {
@@ -28,6 +28,16 @@ $(document).ready(function() {
     });
 
     if (nav_bar.children('a').length > 0) {
+        // Add a button to delete the navigation frame
+        var close_link = $('<a></a>');
+        close_link.text('X');
+        close_link.attr({
+            href: '#',
+            onclick: 'javascript:var e=document.getElementById("jetpack-html-navigation");e.parentNode.removeChild(e);',
+            title: 'Remove this!'
+        });
+        nav_bar.append(close_link);
+
         // Style the navigation block
         nav_bar.css({
             'position'    : 'fixed',
