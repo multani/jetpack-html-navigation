@@ -1,17 +1,16 @@
 // Link types supported (which allows navigation)
 var relKeywords = [
-    'start',
     'next',
     'prev',
     'contents',
     'index',
     'top',
+    'start',
 ];
 
 
 $(document).ready(function() {
     var nav_bar = $('<div></div>');
-    var contents = [];
     var links_map = {};
 
     $('head link').each(function(i, link) {
