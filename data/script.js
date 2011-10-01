@@ -10,12 +10,17 @@ var relKeywords = [
 
 
 $(document).ready(function() {
-    var links = $('head link');
     var nav_bar = $('<div></div>');
     var contents = [];
+    var links_map = {};
 
-    links.each(function(i, link) {
-        if ($.inArray(link.rel, relKeywords) != -1) {
+    $('head link').each(function(i, link) {
+        links_map[link.rel] = link;
+    });
+
+    relKeywords.forEach(function(keyword) {
+        if (keyword in links_map) {
+            var link = links_map[keyword];
             var a = $('<a></a>');
             a.attr({href: link.href, title: link.title});
             a.text(link.rel);
