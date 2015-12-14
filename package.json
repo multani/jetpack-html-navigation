@@ -1,8 +1,16 @@
 {
-	"author": "Jonathan Ballet <jon@multani.info>",
-	"description": "Display a toolbar at the top of a page, for website proposing HTML navigation feature.",
-	"fullName": "HTML navigation toolbar",
-	"license": "BSD",
-	"id": "jid0-EhjT1CU8pCBA01ekZ78Sju21Bts",
-	"version": "0.2.0"
+  "title": "HTML navigation toolbar",
+  "name": "html-navigation-toolbar",
+  "version": "0.3.0",
+  "description": "Display a toolbar at the top of a page, for website proposing HTML navigation feature.",
+  "main": "index.js",
+  "author": "Jonathan Ballet <jon@multani.info>",
+  "engines": {
+    "firefox": ">=38.0a1"
+  },
+  "id": "html-navigation-toolbar@multani.info",
+  "license": "BSD",
+  "keywords": [
+    "jetpack"
+  ]
 }

@@ -1,6 +1,6 @@
 // Import the APIs we need.
-var pageMod = require("page-mod");
-var data = require("self").data;
+var pageMod = require("sdk/page-mod");
+var data = require("sdk/self").data;
 
 pageMod.PageMod({
     include: ["*"],
