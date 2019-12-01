@@ -5,8 +5,16 @@
 This is a Firefox extension which provides a small toolbar to navigate throught
 a website, on websites that provide the right "link types", as described in the
 [link types
-section](http://www.w3.org/TR/1999/REC-html401-19991224/types.html#type-links)
-of the HTML 4 specifications.
+section](https://www.w3.org/TR/html52/links.html#sequential-link-types)
+of the HTML specification.
+
+For example, a website can define "previous" and/or "next" documents using.:
+
+```html
+<!-- Links defined for document "chapter2.html" -->
+<link href="chapter1.html" rel="prev">
+<link href="chapter3.html" rel="next">
+```
 
 This is useful if you are browsing documentation, such as those produced by the
 [Sphinx](http://sphinx.pocoo.org/) documentation project or on the [W3C
